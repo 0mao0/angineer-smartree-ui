@@ -3,6 +3,10 @@
   "version": "0.1.2",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0mao0/angineer-smartree-ui.git"
+  },
   "publishConfig": {
     "access": "public"
   },
