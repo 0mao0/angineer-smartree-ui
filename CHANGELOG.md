@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.3
+
+- perf: package.json 声明 `sideEffects` 仅样式文件（`**/*.css` / `**/*.less` / `**/styles/**`）——组件模块可被消费方 bundler tree-shake，此前未声明时打包器保守保留整个库（docs-ui / sop-ui / evals-ui / ui-kit 的树组件均依赖本包）
+- ci: package.json 无 BOM 断言（发版改版本号时容易带入 BOM，vendored 引用会解析失败）
+
 ## v0.1.2
 
 - feat: npm registry 正式上架（@angineer/smartree）
